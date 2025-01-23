@@ -1,0 +1,142 @@
+@font-face {
+  font-family: "NanumSquareNeo-Variable";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --red: #e46e80;
+  --orange: #f18575;
+  --yellow: #fbc85b;
+  --green: #32b9c1;
+  --blue: #5195ee;
+  --purple: #8579ef;
+  --n000: #f9fafc;
+  --n100: #f0f3f7;
+  --n200: #e0e4ec;
+  --n300: #cacfd9;
+  --n400: #9ba2b0;
+  --n500: #7f8594;
+  --n600: #616775;
+  --n700: #494d59;
+  --n800: #3e414d;
+  --n900: #343843;
+  --n930: #2b2f3a;
+  --n960: #262a34;
+  --light-red: #ffa8b5;
+  --light-orange: #ffbab0;
+  --light-yellow: #ffe7b2;
+  --light-green: #7fd9df;
+  --light-blue: #77b2ff;
+  --light-purple: #9689ff;
+  --dark-red: #dc596d;
+  --dark-orange: #e16a58;
+  --dark-yellow: #e4ac31;
+  --dark-green: #1d9da6;
+  --dark-blue: #3a7fd8;
+  --dark-purple: #695dd0;
+  --light-brown: #b9968e;
+  --brown: #a87c72;
+  --dark-brown: #9a695e;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: NanumSquareNeo-Variable, sans-serif;
+  font-size: 16px;
+}
+
+body {
+  margin: 0 auto;
+  padding: 16px;
+  max-width: 720px;
+  width: 100%;
+}
+
+a {
+  color: var(--purple);
+}
+
+button {
+  display: block;
+  outline: none;
+  border: none;
+  color: var(--n100);
+  background-color: var(--purple);
+  font-size: 16px;
+  font-weight: 600;
+  padding: 16px 24px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button.full {
+  display: block;
+  width: 100%;
+}
+
+button.add-to-cart-btn {
+  background-color: var(--n200);
+  color: var(--n600);
+}
+
+button.add-to-cart-btn:hover,
+button.add-to-cart-btn:active {
+  background-color: var(--n300);
+}
+
+button:hover {
+  background-color: var(--light-purple);
+}
+
+button:active {
+  background-color: var(--dark-purple);
+}
+
+#logo {
+  height: 32px;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: 32px;
+  margin: 24px 0;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  list-style: none;
+  gap: 16px;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--n100);
+  padding: 16px 24px;
+  border-radius: 4px;
+}
+
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  padding: 32px 16px;
+  list-style: none;
+  gap: 16px;
+  border-radius: 4px;
+  background-color: var(--n100);
+}
+
+.count {
+  color: var(--n400);
+}

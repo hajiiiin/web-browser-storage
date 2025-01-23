@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>코드잇 마켓</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <h2 class="heading">코드잇 마켓</h2>
+    <ul class="items">
+      <li class="item">
+        <span>사과</span>
+        <button class="add-to-cart-btn" data-item-name="apple">담기</button>
+      </li>
+      <li class="item">
+        <span>오렌지</span>
+        <button class="add-to-cart-btn" data-item-name="orange">담기</button>
+      </li>
+      <li class="item">
+        <span>바나나</span>
+        <button class="add-to-cart-btn" data-item-name="banana">담기</button>
+      </li>
+    </ul>
+
+    <p class="count">
+      장바구니: <span id="total-item-count-in-cart">0</span>개
+    </p>
+    <button id="go-to-shopping-cart" class="full">장바구니로 가기</button>
+    <script src="index.js"></script>
+  </body>
+</html>
